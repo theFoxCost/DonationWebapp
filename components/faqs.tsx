@@ -11,9 +11,9 @@ export default function FAQs() {
   return (
     <section
       id="faq"
-      dir={isArabic ? "rtl" : "ltr"} // 👈 switch direction for Arabic
+      dir={isArabic ? "rtl" : "ltr"} 
       className={`
-        scroll-py-16 py-16 md:scroll-py-32 md:py-32 transition-all duration-300
+        scroll-py-16 py-16 md:scroll-py-32 md:py-32 transition-all duration-300 
         ${isArabic ? `${palestine.className} text-right` : "text-left"}
       `}
     >
@@ -26,8 +26,6 @@ export default function FAQs() {
           <div className={`text-center lg:${isArabic ? "text-right" : "text-left"}`}>
             <h2 className="mb-4 text-3xl font-semibold md:text-4xl">
               {t("FAQ_Title_Line1")} <br className="hidden lg:block" />{" "}
-              {t("FAQ_Title_Line2")} <br className="hidden lg:block" />{" "}
-              {t("FAQ_Title_Line3")}
             </h2>
             <p>{t("FAQ_Subtitle")}</p>
           </div>

@@ -25,9 +25,7 @@ i18n.use(initReactI18next).init({
         LearnMore: "Learn More",
         AppScreen: "App screen illustration",
         FAQ_Title_Line1: "Frequently Asked Questions",
-        FAQ_Title_Line2: "About Sharing and Helping",
-        FAQ_Title_Line3: "on Our Platform",
-        FAQ_Subtitle: "Find answers to common questions about donating, receiving, and how our community works.",
+        FAQ_Subtitle: "Find answers to common questions about donating",
 
         // Q1
         FAQ_Q1: "How can I donate food or clothes?",
@@ -54,11 +52,20 @@ i18n.use(initReactI18next).init({
         "Footer_About": "About",
         "Footer_FAQ": "FAQ",
         "Footer_HomeLabel": "Go Home",
-        "Footer_Rights": "All rights reserved"
+        "Footer_Rights": "All rights reserved",
+        WhyWeDothat: "Why We Do That?",
+        "Why": "Why?",
+        Stats_Title: "Our Impact in Numbers",
+        Stats_Subtitle:
+          "Spanning 58 wilayas and over 47 million citizens, our platform connects people through kindness.", Stats_Wilayas: "Wilayas Reached",
+        Stats_Citizens: "Citizens United in Giving",
+        Stats_Free: "Completely Free for Everyone",
+        "numbers": "Numbers"
       },
     },
     ar: {
       translation: {
+        "numbers": "أرقام",
         Features: "المميزات",
         Solution: "الحلول",
         Pricing: "الأسعار",
@@ -78,7 +85,7 @@ i18n.use(initReactI18next).init({
         FAQ_Title_Line1: "الأسئلة الشائعة",
         FAQ_Title_Line2: "حول المشاركة والمساعدة",
         FAQ_Title_Line3: "على منصتنا",
-        FAQ_Subtitle: "اعثر على إجابات لأكثر الأسئلة شيوعًا حول التبرع، والاستلام، وكيفية عمل مجتمعنا.",
+        FAQ_Subtitle: "اعثر على إجابات لأكثر الأسئلة شيوعًا حول التبرع، والاستلام.",
 
         FAQ_Q1: "كيف يمكنني التبرع بالطعام أو الملابس؟",
         FAQ_A1_Intro: "التبرع سهل للغاية! فقط اتبع هذه الخطوات لمشاركة ما لا تحتاجه:",
@@ -101,7 +108,15 @@ i18n.use(initReactI18next).init({
         "Footer_About": "حول",
         "Footer_FAQ": "الأسئلة الشائعة",
         "Footer_HomeLabel": "العودة إلى الصفحة الرئيسية",
-        "Footer_Rights": "جميع الحقوق محفوظة"
+        "Footer_Rights": "جميع الحقوق محفوظة",
+        "WhyWeDothat": "لماذا نفعل ذلك؟",
+        "Why": "لماذا؟",
+        Stats_Title: "تأثيرنا بالأرقام",
+          Stats_Subtitle:
+       "يمتد عبر ٥٨ ولاية وأكثر من ٤٧ مليون مواطن، تربط منصتنا الناس بروح العطاء.",
+        Stats_Wilayas: "ولايات متصلة",
+        Stats_Citizens: "مواطنون متحدون في العطاء",
+        Stats_Free: "مجاني تمامًا للجميع",
       },
     },
     fr: {
@@ -141,6 +156,7 @@ i18n.use(initReactI18next).init({
         FAQ_A3_Intro: "Nous vous encourageons à ne partager que des aliments sûrs et propres. Veuillez :",
         FAQ_A3_Point1: "Éviter les aliments périmés ou avariés.",
         FAQ_A3_Point2: "Emballer soigneusement et mentionner tout allergène connu.",
+        "numbers": "Nombres",
 
         FAQ_Q4: "Puis-je donner d’autres objets que de la nourriture et des vêtements ?",
         FAQ_A4: "Bien sûr ! Vous pouvez donner des livres, des chaussures, des couvertures ou de petits objets ménagers tant qu’ils sont propres et en bon état.",
@@ -149,8 +165,15 @@ i18n.use(initReactI18next).init({
         "Footer_About": "À propos",
         "Footer_FAQ": "FAQ",
         "Footer_HomeLabel": "Page d’accueil",
-        "Footer_Rights": "Tous droits réservés"
-
+        "Footer_Rights": "Tous droits réservés",
+        "WhyWeDothat": "Pourquoi faisons-nous cela ?",
+        "Why": "Pourquoi ?",
+        Stats_Title: "Notre impact en chiffres",
+          Stats_Subtitle:
+          "Présente dans 58 wilayas et plus de 47 millions de citoyens, notre plateforme relie les gens par la bienveillance.",
+        Stats_Wilayas: "Wilayas connectées",
+        Stats_Citizens: "Citoyens unis dans le partage",
+        Stats_Free: "Entièrement gratuit pour tous",
       },
     },
     zh: {
@@ -168,6 +191,7 @@ i18n.use(initReactI18next).init({
           "使用可重用且美观的组件，更快地构建和自定义现代 Web 应用程序。",
         HeroDescriptionMobile: "可重用的组件，用于快速构建现代 Web 应用程序。",
         StartBuilding: "开始构建",
+        "numbers": "数字",
         LearnMore: "了解更多",
         AppScreen: "应用程序屏幕示意图",
         FAQ_Title_Line1: "常见问题",
@@ -196,9 +220,88 @@ i18n.use(initReactI18next).init({
         "Footer_About": "关于",
         "Footer_FAQ": "常见问题",
         "Footer_HomeLabel": "返回首页",
-        "Footer_Rights": "版权所有"
+        "Footer_Rights": "版权所有",
+        "WhyWeDothat": "我们为什么这样做？",
+        "Why": "为什么？",
+        Stats_Title: "我们的影响力数字",
+        Stats_Subtitle:
+          "覆盖58个省份和4700多万公民，我们的平台以善意连接每个人。",
+        Stats_Wilayas: "已覆盖的省份",
+        Stats_Citizens: "共同奉献的公民",
+        Stats_Free: "完全免费，人人可用",
       },
     },
+    tzm: {
+  translation: {
+    // Navbar
+    Features: "ⴰⵣⵓⵍⵎⴰⵏ",
+    Solution: "ⴰⴷⴷⵉⵔ",
+    Pricing: "ⵉⵙⵎⴰⵔⵉⵏ",
+    About: "ⴰⵎⴰⵣⵉⵖ",
+    Login: "ⵍⵓⵍⵉ",
+    SignUp: "ⴰⵣⵎⵎⴰⵔ",
+    New: "ⴰⵎⴰⵣⵉⵖ",
+
+    // Hero Section
+    IntroTailark: "ⴰⵎⵔⴰⴳ ⵏ ⵜⵉⵎⴰⴹⴰⵍⵉⵜ ⵜⵉⵏⵙⵙⴰ",
+    MessageWelcome: "ⴰⵣⵎⴰⵔ ⵏ ⵜⴰⵎⵓⵔⵜ ⵏⴽ. ⴰⴷ ⵜⴽⴰⵎⵎⴰⵔ ⵉⵣⵣⵡⴰⵍ ⵏ ⵉⵎⴻⵏⵏⴰ.",
+    HeroDescription:
+      "ⴰⵎⵙⵉⵙ ⴽⵓ ⵉⵙⵙⴰ ⴷ ⵉⵎⴻⴳⴻⵔⴰⵏ, ⴷ ⴰⵙⴰⵍ ⵏ ⵜⵉⵎⴰⵣⵉⵖⵜ. ⴰⴽⴰⵢ ⴰⵎⵔⴰⵔ ⴰⴽⵔⵉ ⵉⴳⵔⴰⴷ ⵏ ⵜⴰⵙⵏⵉⵍⴰ.",
+    HeroDescriptionMobile:
+      "ⵉⵙⵙⴰⵏ ⴰⴳⵎⴰⵔⵏ ⴰⴷ ⵉⴳⵔⴰⴷ ⵜⵉⵎⴰⴹⴰⵍⵉⵏ ⵏ ⵡⵉⵙⴰⵙ ⵓⵙⵙⴰⵏ.",
+    StartBuilding: "ⴰⴷⵔⴰⵙ",
+    LearnMore: "ⴰⴷ ⵓⵏⵙⴰⵎ",
+    AppScreen: "ⴰⵎⴰⵣⵉⵖ ⵏ ⵜⴰⴳⵓⴷⵉ ⵏ ⵡⵓⵏⴰⵢ",
+
+    // FAQ Section
+    FAQ_Title_Line1: "ⴰⵙⵉⵏⵉⵡ ⴰⴷⴷⵔⵉⵙⵏ",
+    FAQ_Subtitle: "ⴰⵣⵎⵎⴰⵔ ⵏ ⵉⴼⵓⵙⴰⵏ ⴷ ⵜⵉⵎⴰⵣⵉⵖⵜ.",
+
+    // Q1
+    FAQ_Q1: "ⴰⵎⴻⵙⵙ ⴰⵎⵙⴰⵔ ⴰⴷ ⴰⴷⵔⴰ ⵢⴰⵔ ⴰⵙⴰⵍ ⴷ ⵜⵉⵎⴰⵣⵉⵖⵜ؟",
+    FAQ_A1_Intro: "ⴰⵎⵙⴰⵔ ⴰⵎⵔⴰⴳ ⴰⴷⴷⵔⵉⵙ! ⴰⵏⵖⵍ ⴰⵙⴷⴰⴷ ⵏ ⵉⵎⴻⵔⴷⴷⴰ:",
+    FAQ_A1_Step1: "ⵍⵓⵍⵉ ⴰⴷ ⴰⵣⵎⵎⴰⵔ ⵉⴳⵔ ⴰⵎⵙⵙⴰ.",
+    FAQ_A1_Step2: "ⴰⵙⴳ ⴰⵎⵙⵉⵙ ‘ⴰⵣⵎⵎⴰⵔ ⵏ ⵉⴼⵓⵙⴰⵏ’ ⴷ ⴰⵣⵎⵎⴰⵔ ⵜⴰⴼⵉⵍⵉⵜ ⴷ ⵜⵉⴳⴰⵣⵉⵍⵜ.",
+    FAQ_A1_Step3: "ⴰⵙⵎⴰⵏ ⴰⴷ ⵓⵔⵓ ⴰⵎⴰⵢⴰⵏ ⵉⴷⵉ ⵉⵎⴻⵍⵍⴰⴷ ⵏⵙⵙⵎⴰⵍⵏ ⵜⵉⵎⴻⵏⵏⴰⵙⵏ ⵙ ⵡⴰⵏⴳⴳⴰⵍⵉⵏ.",
+
+    // Q2
+    FAQ_Q2: "ⴰⴷⴷ ⴰⴷ ⵜⵓⵙⵙⴰ ⵏ ⵜⴰⵎⴰⵣⵉⵖⵜ ⴰⴳⵎⴰⵔ ⴰⴷ ⴰⵎⵔⴰⵔ؟",
+    FAQ_A2: "ⵢⴰⵏ! ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⴳⴳⴰⵔⵉⵜ ⵜⴰⵙⵏⴰⵍⵜ ⵉⵎⴻⵏⵏⴰ ⴷ ⵉⵎⵓⴹⵉⴷⵉⵏ. ⵜⴰⵎⴰⵣⵉⵖⵜ ⴰⵣⵓⵍ ⴰⴷ ⵜⵓⵙⵙⴰ ⴷ ⵜⴰⴷⵉⵎⵓⵏⵉⵜ ⴷ ⵉⴼⵓⵙⴰⵏ.",
+
+    // Q3
+    FAQ_Q3: "ⴰⴷⴷ ⴰⵙⴻⵙ ⵏⴻⵔ ⴰⴷ ⴰⴷⵔⴰ ⴰⵎⵙⴰⵔ ⴰⵙⴰⵍ ⵉⴳⵔ ⵜⴰⵙⵏⵉⵍⴰ?",
+    FAQ_A3_Intro: "ⴰⵙⴳ ⵉⵎⵙⵙⴰⵏ ⵢⴰⵏ ⵉⵙⵓⵍⵍⴰⵏ ⴷ ⵉⵎⴻⵏⵏⵉⵍⵉⵏ. ⴰⴷ ⵜⵓⵙⵙⴰ ⵏⵏⵉ:",
+    FAQ_A3_Point1: "ⴰⵎⵎⵔⴰ ⵏ ⵉⵎⵙⴰⵔ ⵉⴷ ⵓⴳⴻⵎⵎⴰⵔ ⴷ ⵉⵙⴻⴳⴻⵔ.",
+    FAQ_A3_Point2: "ⴰⵙⵎⴰⵏ ⴰⴷ ⵓⵏⵙⵙⴰ ⴰⴷ ⵓⴷⴷⵔⴰ ⵉⵙⵎⴻⵍⵍⴰⴷ ⵉⴳⵔ ⴰⵣⴷⴰⵔ ⵉⴳⵔ ⵜⴰⵎⵓⵙⴰⵏ ⴷ ⴰⵙⴰⵍ ⴷ ⵉⵎⴻⵏⵏⵉⵍⵉⵏ.",
+
+    // Q4
+    FAQ_Q4: "ⴰⴷⴷ ⴰⴷ ⵙⵙⴻⵔⵙ ⴷ ⵉⴼⵓⵙⴰⵏ ⴷ ⵜⵉⵎⴰⵣⵉⵖⵜ ⴰⴷ ⵓⴼⴼⴰⵍⴰⵏ ⵉⴼⵔⴻⵏⵏⴰⵙ?",
+    FAQ_A4:
+      "ⵢⴰⵏ! ⴰⵙⴳ ⵉⵙⵙⴰⵏ ⴰⴳⵎⴰⵔⵏ ⵢⴰⵏ ⴰⵣⴻⵔⵣⴰⵏ, ⵉⴼⵓⵙⴰⵏ, ⴰⵙⵎⴻⵍⵍⴰⴷ ⴷ ⵉⵎⴻⵏⵏⵉⵍⵉⵏ ⴷ ⵉⵙⴻⴳⴻⵔⵏ.",
+
+    // Footer
+    Footer_Features: "ⴰⵣⵓⵍⵎⴰⵏ",
+    Footer_Solution: "ⴰⴷⴷⵉⵔ",
+    Footer_About: "ⴰⵎⴰⵣⵉⵖ",
+    Footer_FAQ: "ⴰⵙⵉⵏⵉⵡ",
+    Footer_HomeLabel: "ⴰⵣⵓⵍ ⵏ ⵜⴰⵙⵏⵎⴻⵍⵜ",
+    Footer_Rights: "ⴰⵎⵔⴰⵔ ⴰⴷ ⵉⵙⴻⵏⵎⴻⵍⵍⴰⵏ",
+    WhyWeDothat: "ⴰⴷⴷ ⴰⴷ ⵜⵉⴼⵔⵙ ⵙⵎⴰⵔⵏ ⴰⴽⴰ?",
+    Why: "ⴰⵣⵎⴰⵔⵉⵏ?",
+
+    // Stats
+    Stats_Title: "ⴰⵎⴰⵣⵉⵖ ⵏ ⵉⵙⵎⴰⵔⵉⵏ",
+    Stats_Subtitle:
+      "ⴰⵎⵓⵔ ⵏ 58 ⵡⵉⵍⵉⴰⵢⴰⵏ ⴷ ⴰⴽⴽⵯ ⵏ 47 ⵎⵉⵍⵉⵢⵉⵏ, ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⴳⵓⴷⵉ ⴰⵙⴷⴷⴰⴷ ⴷ ⵜⴰⵣⵏⵎⵎⴰⵔⵜ.",
+    Stats_Wilayas: "ⵡⵉⵍⵉⴰⵢⴰⵏ ⵉⴳⵍⴻⵎⵎⴰⵔⴻⵏ",
+    Stats_Citizens: "ⵉⵎⴻⵏⵏⴰ ⵉⴳⵍⴻⵎⵎⴰⵔⴻⵏ ⴷ ⴰⴳⵎⴰⵔ",
+    Stats_Free: "ⴰⴳⵎⴰⵔ ⴰⴷ ⴰⵎⵔⴰⵔ ⵉⵙⴷⵉⵔⵉⵏ",
+
+    // Numbers
+    numbers: "ⴰⵎⵙⴰⵖⵓⵔ"
+  },
+}
+
   },
 });
 

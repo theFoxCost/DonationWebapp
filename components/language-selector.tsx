@@ -1,7 +1,13 @@
 "use client";
 
 import React from "react";
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
+import {
+  Select,
+  SelectTrigger,
+  SelectValue,
+  SelectContent,
+  SelectItem,
+} from "@/components/ui/select";
 import { Languages } from "lucide-react";
 import i18n from "@/lib/i18n";
 
@@ -14,13 +20,12 @@ const languages = [
   { code: "ar", nativeLabel: "عربي" },
   { code: "fr", nativeLabel: "Français" },
   { code: "zh", nativeLabel: "中文" },
+  { code: "tzm", nativeLabel: "ⵜⴰⵎⴰⵣⵉⵖⵜ" }, // Amazigh (Tamazight)
 ];
 
 export function LanguageSelector({ onChange }: Props) {
   const [mounted, setMounted] = React.useState(false);
-
   React.useEffect(() => setMounted(true), []);
-
   if (!mounted) return null;
 
   const handleChange = (code: string) => {

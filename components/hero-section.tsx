@@ -11,10 +11,10 @@ import { LanguageSelector } from "./language-selector"
 import { palestine } from "@/app/fonts"
 
 const menuItems = [
-  { key: "Features", href: "#" },
-  { key: "Solution", href: "#" },
+  { key: "Why", href: "#why" },
+  { key: "numbers", href: "#numbers" },
   { key: "About", href: "#" },
-  { key: "FAQ", href: "#faq" }, // 👈 new
+  { key: "FAQ", href: "#faq" }, 
 ]
 
 export default function HeroSection() {
