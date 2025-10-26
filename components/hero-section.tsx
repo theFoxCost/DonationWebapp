@@ -3,6 +3,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { useSession, signIn, signOut } from "next-auth/react"
 import { Logo } from "@/components/logo"
 import { ArrowRight, Info, Menu, Rocket, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -14,23 +15,21 @@ const menuItems = [
   { key: "Why", href: "#why" },
   { key: "numbers", href: "#numbers" },
   { key: "About", href: "#" },
-  { key: "FAQ", href: "#faq" }, 
+  { key: "FAQ", href: "#faq" },
 ]
 
 export default function HeroSection() {
   const [menuState, setMenuState] = React.useState(false)
   const { t, i18n } = useTranslation()
+  const { data: session } = useSession()
   const isArabic = i18n.language === "ar"
 
   React.useEffect(() => {
     const handleScroll = () => {
-      if (menuState) {
-        setMenuState(false)
-      }
+      if (menuState) setMenuState(false)
     }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
   }, [menuState])
 
   return (
@@ -53,12 +52,28 @@ export default function HeroSection() {
                   aria-label={menuState ? "Close Menu" : "Open Menu"}
                   className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
                 >
-                  <Menu className={`m-auto size-6 duration-200 transition-all ${menuState ? 'rotate-180 scale-0 opacity-0' : 'rotate-0 scale-100 opacity-100'}`} />
-                  <X className={`absolute inset-0 m-auto size-6 duration-200 transition-all ${menuState ? 'rotate-0 scale-100 opacity-100' : '-rotate-180 scale-0 opacity-0'}`} />
+                  <Menu
+                    className={`m-auto size-6 duration-200 transition-all ${
+                      menuState
+                        ? "rotate-180 scale-0 opacity-0"
+                        : "rotate-0 scale-100 opacity-100"
+                    }`}
+                  />
+                  <X
+                    className={`absolute inset-0 m-auto size-6 duration-200 transition-all ${
+                      menuState
+                        ? "rotate-0 scale-100 opacity-100"
+                        : "-rotate-180 scale-0 opacity-0"
+                    }`}
+                  />
                 </button>
               </div>
 
-              <div className={`bg-background mb-6 w-full flex-wrap items-center space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent lg:justify-end ${menuState ? 'flex' : 'hidden lg:flex'}`}>
+              <div
+                className={`bg-background mb-6 w-full flex-wrap items-center space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent lg:justify-end ${
+                  menuState ? "flex" : "hidden lg:flex"
+                }`}
+              >
                 <div className="lg:pr-4">
                   <ul className="space-y-6 text-base lg:flex lg:gap-8 lg:space-y-0 lg:text-sm">
                     {menuItems.map((item, index) => (
@@ -74,14 +89,37 @@ export default function HeroSection() {
                   </ul>
                 </div>
 
+                {/* 🌐 Right Side */}
                 <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit lg:border-l lg:pl-6">
                   <LanguageSelector />
-                  <Button asChild variant="outline" size="sm">
-                    <Link href="#">{t("Login")}</Link>
-                  </Button>
-                  <Button asChild size="sm">
-                    <Link href="#">{t("SignUp")}</Link>
-                  </Button>
+
+                  {session ? (
+                    // ✅ Show user avatar
+                    <div className="flex items-center gap-3">
+                      <Image
+                        src={session.user?.image || "/default-avatar.png"}
+                        alt="User Avatar"
+                        width={36}
+                        height={36}
+                        className="rounded-full border cursor-pointer hover:opacity-80"
+                        onClick={() => signOut()}
+                      />
+                    </div>
+                  ) : (
+                    // ❌ Not logged in → show buttons
+                    <>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => signIn("google")}
+                      >
+                        {t("Login")}
+                      </Button>
+                      <Button size="sm">
+                        <Link href="#">{t("SignUp")}</Link>
+                      </Button>
+                    </>
+                  )}
                 </div>
               </div>
             </div>
